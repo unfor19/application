@@ -56,6 +56,9 @@ deployment:
   # Reload deployment if configMap/secret updates
   reloadOnChange: true
 
+  # Automatically mounts service account token to the pod in "/var/run/secrets/kubernetes.io/serviceaccount"
+  automountServiceAccountToken: true
+
   # Select nodes to deploy which matches the following labels  
   nodeSelector:
     # cloud.google.com/gke-nodepool: default-pool  
@@ -139,6 +142,16 @@ deployment:
 #       persistentVolumeClaim:
 #         claimName: claim-name
 
+      # When setting "automountServiceAccountToken: false", you must manually set the volume project source
+      # service-account-token:
+      #   name: service-account-token
+      #   projected:
+      #     sources:
+      #     - serviceAccountToken:
+      #         path: token
+      #         expirationSeconds: 600
+      #         audience: your-audience
+
   # Mount path for Volumes 
   volumeMounts:
     # volume-name:
@@ -147,6 +160,12 @@ deployment:
 
     # volume-name-2:
     #    mountPath: path-2
+
+    # When setting "automountServiceAccountToken: false", you must manually mount the service account token
+    # volumeMounts:
+    # - name: service-account-token
+    #   mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+    #   readOnly: true    
 
   # Taint tolerations for nodes
   tolerations:
