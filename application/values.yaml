@@ -165,7 +165,7 @@ deployment:
     # volumeMounts:
     # - name: service-account-token
     #   mountPath: /var/run/secrets/kubernetes.io/serviceaccount
-    #   readOnly: true    
+    #   readOnly: true
 
   # Taint tolerations for nodes
   tolerations:
@@ -501,6 +501,9 @@ rbac:
   serviceAccount:
     enabled: false
     name: ""
+
+    # Automount API credentials for the service account assigned to the pod
+    automountServiceAccountToken: true
 
     # Additional Labels on service account
     additionalLabels:
