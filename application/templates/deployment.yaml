@@ -75,7 +75,7 @@ spec:
 {{- end }}
     spec:
       {{- if hasKey .Values.deployment "automountServiceAccountToken" }}
-      automountServiceAccountToken: .Values.deployment.automountServiceAccountToken
+      automountServiceAccountToken: {{ .Values.deployment.automountServiceAccountToken }}
       {{- end }}
       {{- if .Values.deployment.hostAliases }}
       hostAliases:      
