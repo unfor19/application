@@ -74,7 +74,9 @@ spec:
           ]
 {{- end }}
     spec:
-      automountServiceAccountToken: {{ .Values.deployment.automountServiceAccountToken default true }}
+      {{ if .Values.deployment.automountServiceAccountToken }}
+      automountServiceAccountToken: {{ .Values.deployment.automountServiceAccountToken }}
+      {{- end }}
       {{- if .Values.deployment.hostAliases }}
       hostAliases:      
 {{ toYaml .Values.deployment.hostAliases | indent 6 }}
