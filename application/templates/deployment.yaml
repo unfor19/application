@@ -263,6 +263,8 @@ spec:
         {{- end }}
         {{- if .Values.deployment.additionalContainers }}
 {{ toYaml .Values.deployment.additionalContainers | indent 6 }}
+        {{- else if .Values.global.deployment.additionalContainers }}
+{{ toYaml .Values.global.deployment.additionalContainers | indent 6 }}
         {{- end }}
         {{- if .Values.deployment.securityContext }}
       securityContext:      
