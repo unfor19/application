@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   application:
   - apiVersion: v2
-    created: "2024-01-18T18:28:04.767877+02:00"
+    created: "2024-01-23T18:30:12.575341+02:00"
     description: Generic helm chart for all kind of applications
-    digest: 7ae3f3acfa7e4c4af986d35637010c76a06347d279a6b2a6930f0b69c5340669
+    digest: b9af80850e89f32f077ea9de0f25812408b0370889d783610cbf2644d6dd0c7f
     home: https://github.com/stakater/application
     icon: https://github.com/stakater/ForecastleIcons/blob/master/stakater.png
     keywords:
@@ -20,6 +20,6 @@ entries:
     name: application
     type: application
     urls:
-    - https://helm-stakater-app.meirg.co.il/application-2.3.2.tgz
+    - application-2.3.2.tgz
     version: 2.3.2
-generated: "2024-01-18T18:28:04.766492+02:00"
+generated: "2024-01-23T18:30:12.573649+02:00"
