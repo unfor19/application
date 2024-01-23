@@ -2,9 +2,30 @@ apiVersion: v1
 entries:
   application:
   - apiVersion: v2
-    created: "2024-01-23T19:14:44.63423+02:00"
+    created: "2024-01-23T19:45:40.689309+02:00"
     description: Generic helm chart for all kind of applications
-    digest: 9601ead56afcaaa78aaf867c28f0f85597c1ce6d9a62579eba94a354e272b8bb
+    digest: 00c438ec61bb3963e27fbad29ea553c6e1c6f5ac7b4387c417fc5b353a7c453a
+    home: https://github.com/stakater/application
+    icon: https://github.com/stakater/ForecastleIcons/blob/master/stakater.png
+    keywords:
+    - java
+    - node
+    - dotnet
+    - kubernetes
+    - stakater
+    - application
+    maintainers:
+    - email: hello@stakater.com
+      name: Stakater
+    name: application
+    type: application
+    urls:
+    - application-2.3.7.tgz
+    version: 2.3.7
+  - apiVersion: v2
+    created: "2024-01-23T19:45:40.688156+02:00"
+    description: Generic helm chart for all kind of applications
+    digest: befa73691d1eebfa37563390f7cc0b0e003808b2e93d71baab79277608716a8e
     home: https://github.com/stakater/application
     icon: https://github.com/stakater/ForecastleIcons/blob/master/stakater.png
     keywords:
@@ -23,7 +44,7 @@ entries:
     - application-2.3.6.tgz
     version: 2.3.6
   - apiVersion: v2
-    created: "2024-01-23T19:14:44.632976+02:00"
+    created: "2024-01-23T19:45:40.687036+02:00"
     description: Generic helm chart for all kind of applications
     digest: ce6475c688478b9fc10c129bc049ebb2c41c4ecb1bc60e46abe8e5ca2fa3bdb3
     home: https://github.com/stakater/application
@@ -44,7 +65,7 @@ entries:
     - application-2.3.5.tgz
     version: 2.3.5
   - apiVersion: v2
-    created: "2024-01-23T19:14:44.63172+02:00"
+    created: "2024-01-23T19:45:40.685826+02:00"
     description: Generic helm chart for all kind of applications
     digest: 48533ff42ccfd277ecda72bb751cdd2d4ab8df4f263c4e1ed8a90115e7203c8c
     home: https://github.com/stakater/application
@@ -65,7 +86,7 @@ entries:
     - application-2.3.4.tgz
     version: 2.3.4
   - apiVersion: v2
-    created: "2024-01-23T19:14:44.63038+02:00"
+    created: "2024-01-23T19:45:40.684257+02:00"
     description: Generic helm chart for all kind of applications
     digest: e8108d25857b6f1b3b667155976a934a9288d24d773e0b34916d3ed0d753bb10
     home: https://github.com/stakater/application
@@ -86,7 +107,7 @@ entries:
     - application-2.3.3.tgz
     version: 2.3.3
   - apiVersion: v2
-    created: "2024-01-23T19:14:44.628632+02:00"
+    created: "2024-01-23T19:45:40.683065+02:00"
     description: Generic helm chart for all kind of applications
     digest: 2f7b950e4b4e7b8100d25a71f4f23181a9d60241bbba15b576ec32658150a51a
     home: https://github.com/stakater/application
@@ -106,4 +127,4 @@ entries:
     urls:
     - application-2.3.2.tgz
     version: 2.3.2
-generated: "2024-01-23T19:14:44.627261+02:00"
+generated: "2024-01-23T19:45:40.681769+02:00"
